@@ -2,6 +2,7 @@
 
 
 long int tab[3000][1];
+int valfin = 50;
 
 int conject(int val){
   if(val%2==0)
@@ -15,11 +16,9 @@ int conject(int val){
 }
 
 int main(){
-
-
-
-int maint(){
-
+  if(valfin > 0){
+    conject(2);
+  }
 
   return 0;
 }
