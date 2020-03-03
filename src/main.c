@@ -25,9 +25,5 @@ int conject(int val){
 int main(){
 
 
-
-int maint(){
-
-
   return 0;
 }
