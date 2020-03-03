@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 long int tab[3000][1];
-int valfin = 200;
+int valfin = 100000;
 
 int conject(int val){
   if(val%2==0)
