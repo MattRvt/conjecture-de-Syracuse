@@ -23,9 +23,9 @@ int conject(int val){
   conject(val+1);
 }
 
-int main(){
-  if(valfin > 0){
-    conject(2);
+int main(int argc, char *argv[]){
+  if(argv[1] > 0){
+    conject(argv[1]);
   }
 
   return 0;
