@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 long int tab[3000][1];
-int valfin = 100000;
+int valfin = 2147483647;
 
 int conject(int val){
   if(val%2==0)
@@ -29,10 +29,9 @@ int main(int argc, char *argv[]){
 
   int valdebut = atoi(argv[1]);
 
-if(valdebut > 0 && argc > 1){
-  conject(valdebut);
-}
-
+  if(valdebut > 0 && argc > 1){
+    conject(valdebut);
+  }
 
   return 0;
 }
