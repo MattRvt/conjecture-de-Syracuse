@@ -1,3 +1,11 @@
+/**
+ * - amélioration espéré: faire marcher le programme pour 1,2,4,8,16,3,-1
+ * - amélioration effective:
+ * - temps d'exécution pour 77777:
+ *
+ *
+*/
+
 #include <stdio.h>
 #include <time.h>
 
