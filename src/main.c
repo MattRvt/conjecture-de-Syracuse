@@ -1,12 +1,20 @@
-#include <pthread.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#define NB_THREAD 6
 
-int tab[3000];
 
-int maint(){
+long int tab[3000][1];
+
+int conject(int val){
+  if(val%2==0)
+    tab[val][1] = val/2;
+  else
+    tab[val][1] = 3*val +1;
+
+  if(val>valfin)
+    return 0;
+  conject(val+1);
+}
+
+int main(){
 
 
 
