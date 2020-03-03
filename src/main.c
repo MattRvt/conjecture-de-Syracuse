@@ -12,7 +12,6 @@
 long int tab[3000][1];
 int valfin = 200;
 
-
 int conject(int val){
   if(val%2==0)
     tab[val][1] = val/2;
@@ -24,16 +23,10 @@ int conject(int val){
   conject(tab[val][1]);
 }
 
-<<<<<<< HEAD
-int main(){
-
-  conject(58);
-=======
 int main(int argc, char *argv[]){
-  if(argv[1] > 0){
+  if(argv[1] > 0 && argc > 1){
     conject(argv[1]);
   }
->>>>>>> a7bc16bc23baf8d43bb02b3d1d35ac5496ae05ca
 
   return 0;
 }
