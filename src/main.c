@@ -1,7 +1,14 @@
+#include <pthread.h>
 #include <stdio.h>
-int main()
-{
-    // printf() displays the string inside quotation
-    printf("Hello, World!");
-    return 0;
+#include <stdlib.h>
+#include <unistd.h>
+#define NB_THREAD 6
+
+int tab[3000];
+
+int maint(){
+
+
+
+  return 0;
 }
