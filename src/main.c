@@ -19,11 +19,13 @@ int conject(long int val, int etape){
     tab[val][1] = val/2;
   else
     tab[val][1] = 3*val +1;
-  tab[val][0] = etape;
-  printf("%ld. %ld\n",tab[val][0], val);
   if(val==1)
-    return 1;
-  conject(tab[val][1], etape+1);
+    tab[val][0] = 0;
+  else
+    tab[val][0] = conject(tab[val][1], etape+1) +1;
+  printf("%ld. %ld\n",tab[val][0], val);
+  return tab[val][0];
+
 }
 
 int main(int argc, char *argv[]){
