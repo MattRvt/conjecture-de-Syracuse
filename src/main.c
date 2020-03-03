@@ -8,32 +8,31 @@
 
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 long int tab[3000][1];
-int valfin = 200;
-
+int valfin = 100000;
 
 int conject(int val){
   if(val%2==0)
     tab[val][1] = val/2;
   else
     tab[val][1] = 3*val +1;
-  printf("%d\n", val);
+  printf("%ld. %d\n",tab[val][0], val);
+
   if(val>valfin || val==1)
-    return 0;
+    return 1;
   conject(tab[val][1]);
 }
 
-<<<<<<< HEAD
-int main(){
-
-  conject(58);
-=======
 int main(int argc, char *argv[]){
-  if(argv[1] > 0){
-    conject(argv[1]);
-  }
->>>>>>> a7bc16bc23baf8d43bb02b3d1d35ac5496ae05ca
+
+  int valdebut = atoi(argv[1]);
+
+if(valdebut > 0 && argc > 1){
+  conject(valdebut);
+}
+
 
   return 0;
 }
