@@ -10,7 +10,7 @@
 #include <time.h>
 
 long int tab[3000][1];
-int valfin = 50;
+int valfin = 200;
 
 
 int conject(int val){
@@ -18,15 +18,15 @@ int conject(int val){
     tab[val][1] = val/2;
   else
     tab[val][1] = 3*val +1;
-  printf("%d : %d\n", val, tab[val][1]);
-  if(val>valfin)
+  printf("%d\n", val);
+  if(val>valfin || val==1)
     return 0;
-  conject(val+1);
+  conject(tab[val][1]);
 }
 
 int main(){
 
-  conject(8);
+  conject(58);
 
   return 0;
 }
