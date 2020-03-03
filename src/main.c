@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 long int tab[3000][1];
 int valfin = 200;
@@ -24,8 +25,11 @@ int conject(int val){
 }
 
 int main(int argc, char *argv[]){
-  if(argv[1] > 0 && argc > 1){
-    conject(argv[1]);
+
+  int valdebut = atoi(argv[1]);
+
+  if(valdebut > 0 && argc > 1){
+    conject(valdebut);
   }
 
   return 0;
