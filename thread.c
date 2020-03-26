@@ -94,10 +94,10 @@ void * conject(void * arg){
         }
         
 
-      if(val%2==0)
-        tab[val][1] = val/2;
-      else
-        tab[val][1] = val*3 +1;
+        if(val%2==0)
+          tab[val][1] = val/2;
+        else
+          tab[val][1] = val*3 +1;
 
 
         printf("nb etape : %ld.  %ld -> %ld\n",tab[val][0], val, tab[val][1]);
