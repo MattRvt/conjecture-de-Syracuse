@@ -18,7 +18,7 @@
 long int memory = 0;
 //int valfin = 2147483647;
 
-int conject(long int val, int etape, long int *tab[][])
+int conject(long int val, int etape, long int *tab)
 {
     if (val % 2 == 0)
         tab[val][1] = val / 2;
