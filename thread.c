@@ -70,7 +70,7 @@ void * conject(void * arg)  {
   pthread_mutex_lock(&mutex);
   //printf("val : %ld déjà fait : %ld \n", val, tab[val][2]);
   
-      //if(val<200){
+      if(val<200){
 
         tab[val][2] = ok;
         pthread_t t1, t2, t3;
@@ -99,7 +99,7 @@ void * conject(void * arg)  {
             fprintf(stderr, "Erreur dans un thread\n" );
         }
         printf("nb etape : %ld.  %ld -> %ld   |  %ld\n",tab[val][0], val, tab[val][1], tab[val][2]);
-      
+      }
   pthread_mutex_unlock(&mutex);
   pthread_exit(NULL);
 
